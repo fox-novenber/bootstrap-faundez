@@ -61,13 +61,23 @@ h1,h2{ text-align: center;
     grid-template-columns: 1fr 2fr ;
     align-items: center;
 }
+@media (max-width: 768px) { 
+    .nosotros{ 
+        grid-template-areas: "fotopricipal"
+        "introduccion";
+        grid-template-columns: 1fr;
+    }
+}
 .fotopricipal{
     grid-area: fotopricipal;
     padding-top: 50px;
     padding-left: 10px;
-    
-    
-}
+    }
+    @media (max-width: 768px) {
+        .fotopricipal{
+        margin: auto;
+        }
+    }
 .fotopricipal img{
     width: 300px;
     height: 300px;
