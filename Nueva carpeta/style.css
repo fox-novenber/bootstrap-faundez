@@ -1,0 +1,171 @@
+body,head,footer {background-color:#EDFF86;}
+
+.menu1{
+    height: 25px;
+    width: 100%;
+    padding-top: 1em;
+}
+@media (min-width:700px) {
+    .menu1{display: block;}
+    
+}
+
+.caja-menu{
+    display: grid;
+    grid-template-columns: 80px auto ; /*columnas con grid*/
+    grid-template-rows: 70px; /*filas con grid*/
+    justify-content: space-between;
+
+}
+.logo{
+    justify-self: end;
+    overflow: hidden;
+}
+.menuprincipal {
+    list-style-type:none; /* esto le saca el puntito al elemento li*/
+    margin: 0;
+    padding: 0;   
+    text-align: right;
+    
+}
+.menuprincipal li {
+    padding: 1px;
+    margin: 2px;
+    margin-top: 5px;
+    display: inline-block;
+    border:1px solid black;
+}
+@media (max-width: 600px) { 
+    .menuprincipal li {
+        display: block;
+    }
+}
+.menuprincipal li a {
+    text-decoration: none; /* esto le saca la decoracion al vinculo*/
+    display: block;
+    padding: 5px;
+    background-color: #ccff66;
+}
+.menuprincipal li a:hover{
+    background-color: blueviolet;
+    color: aqua;
+    transition: .5s ease-in-out;
+}
+h1,h2{ text-align: center;
+    margin-top: 50px;
+}
+.nosotros{
+    display: grid;
+    grid-template-areas: "fotopricipal introduccion" ;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr ;
+    align-items: center;
+}
+.fotopricipal{
+    grid-area: fotopricipal;
+    padding-top: 50px;
+    padding-left: 10px;
+    
+    
+}
+.fotopricipal img{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    
+}
+.introduccion{
+    grid-area: introduccion;
+}
+.galeriaprincipal{
+   /* display: inline-block;
+    padding-inline-start: 20px;
+    text-align: center;*/
+    /*display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows: repeat(2,1fr);
+    /*flex-wrap: wrap;
+    justify-content:center;*/
+    display: grid;
+    grid-template-areas: "galeriapricipal" ;
+    display: inline-block;
+    padding-inline-start: 20px;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+   
+}
+.galeriaprincipal img{
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    
+}
+.galeriapricipal ,img:hover {
+    filter: grayscale(80%);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.2);
+    transition: .5s;
+    
+}
+
+#redes-sociales{  /*preguntar como hacer sticky esta parte*/
+    position: sticky;
+    bottom: 30px;
+}
+.redes {
+    list-style-type: none;
+    text-align: right;
+    
+}
+.redes img{
+    width: 3em;
+    height: 3em;
+}
+.redes li{
+    display: inline-block;
+    padding: 1px;
+    margin: 2px;
+    margin-top: 5px;
+}
+.redes li a{
+    text-decoration: none;
+}
+.contactos{
+    margin-top: 30px;
+    padding-left: 25px;
+    padding-top: 5px;
+}
+form,input{
+    margin: 1px;
+    padding-top: 3px;
+    text-align:left;
+    
+}
+/* CSS PARA EL FOOTER*/
+footer{
+    display:flex;
+}
+.final{
+    width: 250px;
+    height: auto;
+}
+.redes-footer{
+    list-style-type: none;
+    
+}
+.redes-footer ul {
+    padding: 20px;
+    
+}
+.redes-footer li {
+    display: block;
+    margin: 5px;
+    margin-top: 5px;
+}
+.redes-footer li a {
+text-decoration: none;    
+}
+.legales p {
+    color:blue;
+}   
